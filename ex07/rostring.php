@@ -10,5 +10,6 @@
 	}
 	array_push($tmp, array_shift($tmp));
 	$final = implode(' ', $tmp);
-	printf("%s\n", $final);
+	if ($final != "")
+		printf("%s\n", $final);
 ?>
