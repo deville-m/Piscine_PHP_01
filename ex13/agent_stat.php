@@ -25,7 +25,8 @@ if ($argv[1] == "moyenne")
 			}
 		}
 	}
-	echo ($total / $nb) . "\n";
+	if ($nb)
+		echo ($total / $nb) . "\n";
 }
 else if ($argv[1] == "moyenne_user") {
 	foreach ($data as $user => $notes) {
@@ -37,7 +38,8 @@ else if ($argv[1] == "moyenne_user") {
 				$nb++;
 			}
 		}
-		echo $user . ":" . ($total / $nb) . "\n";
+		if ($nb)
+			echo $user . ":" . ($total / $nb) . "\n";
 	}
 }
 else {
@@ -50,7 +52,8 @@ else {
 				$nb++;
 			}
 		}
-		echo $user . ":" . ($avg / $nb) . "\n";
+		if ($nb)
+			echo $user . ":" . ($avg / $nb) . "\n";
 	}
 }
 
