@@ -1,5 +1,5 @@
 <?php
-function ft_split($str)
+function ft_split(string $str)
 {
 	$tmp = explode(' ', $str);
 	$final = array();

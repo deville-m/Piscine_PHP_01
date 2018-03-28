@@ -1,5 +1,5 @@
 <?php
-	function ft_is_sort($tab)
+	function ft_is_sort(array $tab)
 	{
 		$tmp = $tmp2 = $tab;
 		$inc = $dec = true;
@@ -12,8 +12,8 @@
 			if ($tmp2[$key] != $value)
 				$dec = false;
 			if (!$dec && !$inc)
-				return (0);
+				return (false);
 		}
-		return (1);
+		return (true);
 	}
 ?>

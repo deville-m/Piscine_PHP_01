@@ -9,6 +9,5 @@ foreach ($tmp as $item) {
 		array_push($tmp2, $item);
 }
 $res = implode(' ', $tmp2);
-if ($res != "")
-	printf("%s\n", $res);
+printf("%s\n", $res);
 ?>

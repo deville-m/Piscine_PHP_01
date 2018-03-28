@@ -1,5 +1,7 @@
 #! /usr/bin/php
-<?php 
+<?php
+	if (fopen("php://stdin", 'r') === false)
+		exit;
 	while (true)
 	{
 		echo "Entrez un nombre: ";
